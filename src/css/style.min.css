@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=style.min.css.map */
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 21px 0 91px 0;
+}
+
+.promo {
+  background: url(../img/bg.png);
+  min-height: 650px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_logo {
+  width: 250px;
+}
+
+.header_logo img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.min.css.map */
