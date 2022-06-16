@@ -5,7 +5,7 @@ body {
 .container {
   max-width: 950px;
   margin: 0 auto;
-  padding: 21px 0 91px 0;
+  padding: 21px 0 83px 0;
 }
 
 .promo {
@@ -159,5 +159,48 @@ body {
 
 .button:hover {
   background-color: #d40101;
+}
+
+.benefits_header {
+  font-weight: 700;
+  font-size: 30px;
+  color: #0D0D0D;
+  text-align: center;
+  margin-top: 49px;
+}
+
+.benefits_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 65px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.benefits_icon {
+  width: 269px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0D0D0D;
+}
+
+.benefits_icon span {
+  color: red;
+}
+
+.benefits_icon img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.benefits_icon h2 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0D0D0D;
+  text-align: center;
 }
 /*# sourceMappingURL=style.min.css.map */
