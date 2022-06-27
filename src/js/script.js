@@ -22,16 +22,16 @@ $(document).ready(function(){
     $('.catalog_link').each(function(i) {
         $(this).on('click', function(e) {
             e.preventDefault();
-            $('.catalog_contents').eq(i).togleClass('catalog_contents_active');
-            $('.catalog_list').eq(i).togleClass('catalog_list_active');
+            $('.catalog_contents').eq(i).removeClass('catalog_contents_active');
+            $('.catalog_list').eq(i).addClass('catalog_list_active');
         })
     })
 
     $('.catalog_back').each(function(i) {
         $(this).on('click', function(e) {
             e.preventDefault();
-            $('.catalog_contents').eq(i).togleClass('catalog_contents_active');
-            $('.catalog_list').eq(i).togleClass('catalog_list_active');
+            $('.catalog_contents').eq(i).addClass('catalog_contents_active');
+            $('.catalog_list').eq(i).removeClass('catalog_list_active');
         })
     })
 });
