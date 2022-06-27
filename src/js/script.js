@@ -12,4 +12,26 @@ $(document).ready(function(){
         }
         ]
     });
-  });
+
+    $('ul.catalog_tabs').on('click', 'li:not(.catalog_tab_active)', function() {
+        $(this)
+        .addClass('catalog_tab_active').siblings().removeClass('catalog_tab_active')
+        .closest('div.container').find('div.catalog_contents').removeClass('catalog_contents_active').eq($(this).index()).addClass('catalog_contents_active');
+    });
+
+    $('.catalog_link').each(function(i) {
+        $(this).on('click', function(e) {
+            e.preventDefault();
+            $('.catalog_contents').eq(i).togleClass('catalog_contents_active');
+            $('.catalog_list').eq(i).togleClass('catalog_list_active');
+        })
+    })
+
+    $('.catalog_back').each(function(i) {
+        $(this).on('click', function(e) {
+            e.preventDefault();
+            $('.catalog_contents').eq(i).togleClass('catalog_contents_active');
+            $('.catalog_list').eq(i).togleClass('catalog_list_active');
+        })
+    })
+});
